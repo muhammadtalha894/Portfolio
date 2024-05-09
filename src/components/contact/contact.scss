@@ -1,0 +1,175 @@
+.contact{
+    height: 100%;
+    
+    
+
+   > h1{
+        text-align: center;
+        padding: 5rem 0 ;
+        font-size: 3rem;
+        font-family: 'outfit';
+    }
+
+    >.contact-flex{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+       
+        
+
+
+        .contact-info{
+            max-width: 20rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.90rem;
+            flex: 1;
+
+            >p{
+                margin-bottom: 2rem;
+            }
+
+            .info{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                color: wheat;
+                font-weight: 100;
+                font-size: 0.90rem;
+               
+              
+
+               .icon{
+                font-size: 1.50rem;
+               }
+            }
+          
+
+            >h1{
+                background: linear-gradient(290deg , #da7c25 80%,#b923e1 102.06%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: large;
+                font-size: 2.25rem;
+                font-weight: 700;
+            }
+            >p{
+                font-size: 0.90rem;
+                color: wheat;
+
+
+            }
+        }
+
+        .contact-form{
+            width: 40%;
+            color: wheat;
+            display: flex;
+            flex-direction: column;
+          
+          
+
+            >div{
+                display: flex;
+                flex-direction: column;
+                gap: 0.50rem;
+                >label{
+                    font-size: 0.75rem;
+                    color: wheat;
+                }
+                
+                >input{
+                    margin-bottom: 1rem;
+                    max-width: 25.50rem;
+                    padding: 1rem 0.80rem;
+                    background-color:#e8f0fe;
+                    outline: none;
+                    border: 1px transparent;
+                    border-radius: 10px;
+                }
+                >textarea{
+                    margin-bottom: 1rem;
+                    max-width: 25.50rem;
+                    padding: 1rem 0.80rem;
+                    background-color:#e8f0fe;
+                    outline: none;
+                    border: 1px transparent;
+                    border-radius: 10px;
+
+                }
+               
+            }
+
+            button{
+                background: linear-gradient(290deg , #da7c25 0.36%,#b923e1 102.06%);
+                width: 6rem;
+                border: 1px transparent;
+                outline: none;
+                padding: 10px;
+                border-radius: 10px;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background: linear-gradient(290deg , #da7c25 30%,#b923e1 102.06%);
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+   .contact{
+
+     .contact-flex{
+        width: 100%;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        // justify-content: center;
+      
+    
+
+        
+        
+        
+    }
+    .contact-form{
+        width: 80%;
+
+        input{
+            width: 100%;
+            
+            
+        }
+        textarea{
+            
+            width: 100%;
+        }
+     
+     
+       
+
+      
+    }
+
+    .contact-info{
+        width: 40%;
+        
+      
+       
+        
+
+      
+    }
+   }
+
+    
+}

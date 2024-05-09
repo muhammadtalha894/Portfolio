@@ -1,0 +1,117 @@
+.about-con{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+
+
+    >h1{
+        text-align: center;
+        padding-bottom: 4rem ;
+        font-size: 3rem;
+        font-family: 'outfit';
+    }
+
+    .about-exp{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 3rem 0;
+        justify-content: space-around;
+        height: 30%;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+
+        div{
+             border-right:2px solid white ;
+             padding-right: 2rem;
+        }
+
+        h2{
+            background: linear-gradient(180deg , #da7c25 0.36%,#b923e1 102.06%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-bottom: 0.50rem;
+        }
+    }
+
+}
+.about{
+    display: flex;
+    gap:4rem;
+    
+    
+
+    img{
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .about-right{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+
+        >.skills{
+            padding-top:2rem ;
+            display: flex;
+        flex-direction: column;
+        gap:1rem;
+            
+        }
+    }
+
+    .about-skills{
+        font-size: 0.75rem;
+        display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            gap: 2.5rem;
+            transition: all 0.5s;
+        div{
+            width: 70%;
+            height: 5px;
+            background: linear-gradient(267deg , #da7c25 0.36%,#b923e1 102.06%);
+            border-radius: 30px;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+
+   
+}
+
+@media screen and (max-width:600px) {
+
+    .about-con{
+        width: 80%;
+        
+        >.about{
+            flex-direction: column;
+
+            >img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .about-exp{
+            font-size: 2rem;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 4rem;
+            
+            div{
+                border: none ;
+            }
+        }
+    }
+    
+}

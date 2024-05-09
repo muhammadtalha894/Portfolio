@@ -1,0 +1,127 @@
+.navbar{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 1rem 0;
+    .nav-mob-open{
+        display: none;
+    }
+
+    >.nav-menu{ 
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        gap: 3rem;
+        cursor: pointer;
+        font-size: 15px;
+        
+        
+    }
+    >.navbarH1{
+        font-size: 1.75rem;
+
+        font-weight: bold;
+        >span{
+            font-size: 2rem;
+            text-transform: uppercase;
+            
+        }
+        
+    
+
+    }
+
+    >div{
+        color: white;
+        background: linear-gradient(267deg , #da7c25 0.36%,#b923e1 102.06%);
+        padding: 0.75rem;
+        border-radius: 20px;
+        font-size: 17px;
+
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    >div:hover{
+        transform: scale(1.05);
+    }
+
+}
+
+.nav-mob-close{
+    display: none;
+}
+
+@media screen and (max-width:786px) {
+    .navbar{
+        margin: 20px 50px;
+        justify-content: space-between;
+
+        .nav-mob-open{
+
+            display: block;
+            position: fixed;
+            right: 30px;
+            
+            font-size: 1.60rem;
+
+           
+
+          
+        }
+
+        .nav-menu{
+            position: fixed;
+            flex-direction: column;
+            align-items: start;
+            top: 0;
+            background-color: #1f0016;
+            width: 250px;
+            height: 100%;
+            z-index: 2;
+            gap:5px ;
+            transition: right 0.5s;
+            right: -350px;
+            border-top-left-radius: 3rem;
+            border-bottom-left-radius: 4rem;
+           
+
+
+            li{
+
+                font-size: 20px;
+                padding-left: 100px;
+                flex-direction: row;
+                gap: 20px;
+
+            }
+            
+        
+          
+
+            .nav-mob-close{
+                display: inline;
+                position: relative;
+                top: 30px;
+                left: 200px;
+                width: 30px;
+                font-size: 1.50rem;
+             
+                
+            }
+
+
+          
+        }
+
+
+
+        
+        >div{
+            display: none;
+        }
+    }
+    
+}
